@@ -1,7 +1,7 @@
 # Grafana RightSizing Dashboard
 Grafana dashboard for evaluating overcommitted Kubernetes clusters. This dashboard offered in JSON format offers a variety of rich visualizations to provide a clearer overview of the cluster's status
 
-## Visualizaion example
+## Visualization example
 
 ![Main view](images/1.png)
 ![Second view](images/2.png)
