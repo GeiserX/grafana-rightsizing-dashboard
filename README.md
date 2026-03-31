@@ -8,6 +8,10 @@
   Grafana dashboard for evaluating overcommitted Kubernetes clusters.
 </p>
 
+<p align="center">
+  <a href="https://grafana.com/grafana/dashboards/25087"><img src="https://img.shields.io/badge/Grafana-Dashboard%2025087-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana Dashboard"></a>
+</p>
+
 ---
 
 This dashboard offered in JSON format offers a variety of rich visualizations to provide a clearer overview of the cluster's status.
