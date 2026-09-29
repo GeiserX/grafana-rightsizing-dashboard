@@ -1,33 +1,21 @@
 <p align="center">
-  <img src="docs/images/banner.svg" alt="Grafana Rightsizing Dashboard banner" width="900"/>
+  <img src="docs/images/banner.svg" alt="Grafana Rightsizing Dashboard" width="900"/>
 </p>
 
 <h1 align="center">Grafana Rightsizing Dashboard</h1>
 
-<p align="center">
-  Grafana dashboard for evaluating overcommitted Kubernetes clusters.
-</p>
+Grafana dashboard that puts CPU and memory usage against requests and limits per namespace and workload, from kube-state-metrics and cAdvisor in Prometheus, to show where a Kubernetes cluster is overcommitted.
 
-<p align="center">
-  <a href="https://grafana.com/grafana/dashboards/25087"><img src="https://img.shields.io/badge/Grafana-Dashboard%2025087-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana Dashboard"></a>
-</p>
+![Namespace CPU and memory panels](docs/images/screenshots/namespaces.png)
 
----
+## Quick start
 
-This dashboard offered in JSON format offers a variety of rich visualizations to provide a clearer overview of the cluster's status.
+In Grafana open Dashboards, New, Import, upload `dashboard.json` and pick your Prometheus datasource when asked. It needs kube-state-metrics, cAdvisor and the kube-prometheus recording rules in that Prometheus; [Usage](docs/usage.md) lists the panels and the metrics behind them.
 
-## Visualization example
+## Documentation
 
-![Main view](images/1.png)
-![Second view](images/2.png)
-![Third view](images/3.png)
+- [Usage](docs/usage.md): the panels, the namespace filter, and the metrics each one reads
 
-## Maintainers
+## License
 
-[@GeiserX](https://github.com/GeiserX)
-
-## Contributing
-
-Feel free to dive in! [Open an issue](https://github.com/GeiserX/grafana-rightsizing-dashboard/issues/new) or submit PRs.
-
-Grafana RightSizing Dashboard follows the [Contributor Covenant](http://contributor-covenant.org/version/2/1/) Code of Conduct.
+[GPL-3.0-or-later](LICENSE)

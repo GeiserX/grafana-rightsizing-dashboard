@@ -13,11 +13,11 @@ Import `dashboard.json` into any Grafana instance connected to a Prometheus data
 
 ## Architecture
 - `dashboard.json` — the complete Grafana dashboard definition
-- `images/` — screenshots of the dashboard views
+- `docs/images/screenshots/` — screenshots of the dashboard views
 - `docs/` — additional documentation
 
 ## Key Rules
-- Dashboard ID on Grafana.com is 25087
+- Grafana.com dashboard 25087 exists in the account but was never published; do not link it
 - Requires Prometheus as data source with kube-state-metrics and cAdvisor
 - Keep the JSON exportable and importable without manual edits
 - No hardcoded cluster-specific values in the dashboard
